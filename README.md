@@ -36,9 +36,25 @@ pip install -r requirements.txt
 
 ## The workflow
 
-1. Fill in `templates/methodology.md` (your five questions).
-2. Ask your AI tool: *"Read templates/methodology.md and implement scripts/build_dataset.py to produce the analysis table described there."*
-3. Stage data on Vista, submit `jobs/train.slurm` to the `gh` queue via Tapis.
-4. Read your metrics, generate figures, write the paper.
+The framework has five stages. The pattern is the same at every stage: **you make the decision in a template, point the AI at it, and review what it produces.** You bring the research; the scaffold, the AI tools, and HPC make it faster.
 
-You bring the research. The scaffold, the AI tools, and HPC make it faster.
+**Start here:** open this repo in your editor (VS Code, Cursor, or Claude Code) and say hi to Claude — ask it to *run the getting-started guide*. It introduces the process and walks you through filling in your first templates.
+
+| Stage | You fill in | The AI helps | Output |
+|---|---|---|---|
+| 1 · Ideation | `templates/research-brief.md` | survey and verify the literature | question, gap, data, venue |
+| 2 · Design | `templates/methodology.md` | — (you answer the five questions) | the plan every script reads |
+| 3 · Compute | — | write the pipeline scripts, then run them on Vista | data on Vista, raw results |
+| 4 · Analysis | `templates/analysis.md` | read metrics + SHAP, make figures | interpretation + figures |
+| 5 · Publication | `templates/submission-plan.md` | assemble the paper | venue-formatted draft |
+
+A typical loop:
+
+1. Fill in the stage's template (start with `templates/methodology.md`).
+2. Point the AI at it, e.g. *"Read templates/methodology.md and write scripts/build_dataset.py to produce the analysis table described there."*
+3. Review what it produced. You decide; the AI accelerates.
+4. Stage data on Vista and submit `jobs/train.slurm` to the `gh` queue, then interpret, visualize, and write.
+
+## Skills
+
+`skills/` is where reusable `SKILL.md` instructions live, so you can package a repeatable task once and use it in any tool (Claude Code, Cursor, VS Code, or Claude on the web). It's empty for now; see [`skills/README.md`](skills/README.md) for how to add and use them.

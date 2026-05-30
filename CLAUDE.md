@@ -2,9 +2,14 @@
 
 This is an HPC research project. You are helping accelerate research the author already knows how to do. Your job is to write and debug code, not to design the research.
 
+## First contact
+
+When the author first opens this project, greets you, or seems unsure where to start, do this before anything else: read `skills/getting-started/SKILL.md` and follow it. Introduce yourself and offer to guide them through filling in their templates (starting with the research brief). Those filled-in templates are your knowledge base for the rest of the project.
+
 ## Structure
 - `templates/methodology.md` — the research plan (five methodology questions). Read this first; it defines what every script should do. The author fills it in.
 - `templates/` — blank workshop templates the author fills in across the week (research brief, methodology, analysis, peer review, submission plan, compute log, metrics reference). When asked, read the relevant filled-in template before drafting.
+- `skills/` — reusable `SKILL.md` instructions, one per task (empty for now). When the author names a skill or asks for a task one covers, read the matching `skills/<name>/SKILL.md` and follow it.
 - `data/raw/` — original data (not in Git)
 - `data/processed/` — cleaned, analysis-ready data (not in Git)
 - `scripts/` — `download_data.py`, `build_dataset.py`, `train_model.py`, `evaluate.py`

@@ -1,0 +1,15 @@
+# Skills
+
+Reusable `SKILL.md` instructions Claude understands, one folder per skill.
+
+| Skill | Use it to |
+|---|---|
+| `getting-started` | Be guided through the workflow and filling in your templates — start here |
+
+A `SKILL.md` is a markdown file with a short YAML header (`name`, `description`) followed by step-by-step instructions. Add more as `skills/<name>/SKILL.md`.
+
+## How to use a skill (any tool)
+
+- **Claude Code / Cursor:** open the repo and say "use the &lt;name&gt; skill," or just describe the task. The AI reads the matching `SKILL.md`; `CLAUDE.md` points it here.
+- **VS Code + Copilot:** open the relevant `skills/<name>/SKILL.md` and reference it in your prompt.
+- **Claude on the web:** upload or paste the `SKILL.md` (plus your filled-in template) into the chat.
