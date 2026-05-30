@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 The framework has five stages. The pattern is the same at every stage: **you make the decision in a template, point the AI at it, and review what it produces.** You bring the research; the scaffold, the AI tools, and HPC make it faster.
 
-**Start here:** open this repo in your editor (VS Code, Cursor, or Claude Code) and say hi — you'll meet **Sage**, your guide, who introduces the process and walks you through filling in your first templates.
+**Start here:** [**SETUP.md**](SETUP.md) shows how to get this repo onto your machine and open it in your tool (VS Code, Cursor, Antigravity, Claude Code, the Claude desktop app, or Claude on the web). Once it's open, say hi — you'll meet **Sage**, your guide, who walks you through filling in your first templates.
 
 | Stage | You fill in | The AI helps | Output |
 |---|---|---|---|
