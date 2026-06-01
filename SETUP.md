@@ -24,6 +24,12 @@ You need your own copy so you can save your work. Either way below, **your copy 
 1. On the repo page, click **Fork** (top right) → **Create fork**. This makes your copy at `your-username/hpc-research-starter`.
 2. Optional, if you want help during the workshop: your fork → **Settings → Collaborators → add `ashleyscruse`**. Your work stays yours; this just lets me look when you are stuck.
 
+**Prefer the command line?** One command forks *and* downloads it (and links it back to mine), no web clicks:
+```
+gh repo fork ashleyscruse/hpc-research-starter --clone
+```
+This needs the GitHub CLI (`gh`) installed and `gh auth login` done first (see Step 2, Option C). If you use this, you can skip Step 2.
+
 ## Step 2: Get it onto your computer
 
 Pick whichever you are comfortable with. All give you the full folder.
