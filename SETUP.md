@@ -126,10 +126,14 @@ If I add shared materials to the starter during the week, connect to it once:
 ```
 git remote add upstream https://github.com/ashleyscruse/hpc-research-starter.git
 ```
-Then any time you want the latest:
+Then any time you want the latest, pull with **merge** (the beginner-safe way):
 ```
-git pull upstream main
+git pull --no-rebase --no-edit upstream main
 ```
+- `--no-rebase` merges the two histories, so it keeps **both** your commits and mine. This is the safe choice.
+- `--no-edit` accepts the default merge message, so it does not drop you into a text editor.
+
+If git ever says your branch and mine have "diverged" or asks how to reconcile them, **this same command is the fix.**
 
 ---
 
